@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Chat } from "@ai-sdk/svelte";
   import { type ArcgisMap } from "@arcgis/map-components/components/arcgis-map";
-  import type { UseChatToolsMessage } from "../routes/api/chat/+server";
+  import type { UseChatToolsMessage } from "../../routes/api/chat/+server";
 
   let { chat }: { chat: Chat<UseChatToolsMessage> } = $props();
 
