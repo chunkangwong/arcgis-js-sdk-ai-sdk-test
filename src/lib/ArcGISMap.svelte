@@ -14,7 +14,6 @@
       if (!part.type.startsWith("tool-map")) continue;
 
       if (part.type === "tool-mapZoomTo" && part.state == "output-available") {
-        console.log(part.output);
         arcgisMap.view.goTo({
           center: [part.output.lat, part.output.lon],
           zoom: part.output.zoom,

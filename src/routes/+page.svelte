@@ -1,15 +1,13 @@
 <script lang="ts">
   import ArcGISMap from "$lib/ArcGISMap.svelte";
   import { Chat } from "@ai-sdk/svelte";
+  import "@arcgis/map-components/components/arcgis-map";
+
   import { type UseChatToolsMessage } from "./api/chat/+server";
 
   let input = $state("");
 
-  const chat = new Chat<UseChatToolsMessage>({
-    onToolCall: ({ toolCall }) => {
-      console.log(toolCall);
-    },
-  });
+  const chat = new Chat<UseChatToolsMessage>({});
 
   function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
