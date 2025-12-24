@@ -1,7 +1,6 @@
 <script lang="ts">
   import ArcGISMap from "$lib/components/ArcGISMap.svelte";
   import { Chat } from "@ai-sdk/svelte";
-  import "@arcgis/map-components/components/arcgis-map";
 
   import { type UseChatToolsMessage } from "./api/chat/+server";
 
