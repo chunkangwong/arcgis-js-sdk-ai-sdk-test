@@ -24,7 +24,6 @@
     "zod": "^4.2.1"
   },
   "dependencies": {
-    "@ai-sdk/groq": "^3.0.1",
     "@arcgis/map-components": "^4.34.9"
   }
 }
